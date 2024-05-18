@@ -11,16 +11,81 @@ body{
 h3{
   font-size: 32px;
   color: hsl(240, 38%, 20%);
-  margin: 250px 40px;
+  margin: 200px 40px;
   font-weight: normal;
+  
 }
 div b{
   color: hsl(240, 38%, 20%);
   font-weight: 1000;
 }
-div{
+.name{
   color: hsl(240, 18%, 77%);
+  margin: -75px 45px;
 }
 .woman{
  margin: 100px ;
+}
+button{
+  cursor: pointer;
+  position: relative;
+  bottom: 120px;
+  left: 180px;
+  background-color: hsl(240, 18%, 77%);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+@media screen and (max-width: 1149px){
+  .first{
+flex-direction: column-reverse;
+margin: 10px 0;
+  }
+  .second{
+    flex-direction: column-reverse;
+  }
+  button{
+    left: -500px;
+    bottom: 10px;
+  }
+  h3{
+    margin: 30px 30px;
+    width: 80%;
+  }
+  .name{
+    margin: 50px 35px;
+  }
+  .woman{
+    margin: 20px 160px;
+    width: 500px;
+  }
+}
+@media screen and (max-width:933px){
+  button{
+    left: 320px;
+    bottom: 50px;
+  } 
+  }
+
+@media screen and (max-width: 437px){
+  h3{
+    width: 80%;
+  }
+  .woman{
+   width: 300px;
+   margin: 20px ;
+  }
+  button{
+    left: 200px;
+    bottom: 50px;
+  }
+  
+}
+@media screen and (max-width:301px){
+  h3{
+   width: 400px;
+  }
+  button{
+    top: -45px;
+  }
 }
